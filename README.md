@@ -7,7 +7,13 @@ Raj Chetty. 2012. “Time Trends in the Use of Administrative Data for Empirical
 
 ## The Figure
 
-![the graph]("Screen Shot 2018-07-19 at 11.20.16.png" "Figure 2")
+![the graph](Screen_Shot_2018-07-19_11.20.16.png "Figure 2")
+
+## The Data
+
+- [chetty1_datasets.csv](): Data as created by [WebPlot Digitizer](https://apps.automeris.io/wpd/) on 2018-07-19.
+- [chetty1_increase_admin.csv](): Reformatted
+- [chetty1_increase_admin.xlsx](): Reformatting tool
 
 
 ## Tools
