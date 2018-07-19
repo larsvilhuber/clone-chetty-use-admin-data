@@ -11,9 +11,9 @@ Raj Chetty. 2012. “Time Trends in the Use of Administrative Data for Empirical
 
 ## The Data
 
-- [chetty1_datasets.csv](): Data as created by [WebPlot Digitizer](https://apps.automeris.io/wpd/) on 2018-07-19.
-- [chetty1_increase_admin.csv](): Reformatted
-- [chetty1_increase_admin.xlsx](): Reformatting tool
+- [chetty1_datasets.csv](chetty1_datasets.csv): Data as created by [WebPlot Digitizer](https://apps.automeris.io/wpd/) on 2018-07-19.
+- [chetty1_increase_admin.csv](chetty1_increase_admin.csv): Reformatted
+- [chetty1_increase_admin.xlsx](chetty1_increase_admin.xlsx): Reformatting tool
 
 
 ## Tools
