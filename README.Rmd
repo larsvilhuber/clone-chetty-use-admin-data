@@ -8,7 +8,14 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(tidyverse)
+# The color-blind palette with black:
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
+```
 # clone-chetty-use-admin-data
 A scan of the data behind the Chetty (2012) figure
 
@@ -30,8 +37,7 @@ Raj Chetty. 2012. “Time Trends in the Use of Administrative Data for Empirical
 Data is at 
 https://github.com/larsvilhuber/clone-chetty-use-admin-data, but we need the raw URL.
 
-
-```r
+```{r data, error=FALSE, warning=FALSE}
 raw_url <- "https://raw.githubusercontent.com/larsvilhuber/clone-chetty-use-admin-data/master/chetty1_increase_admin.csv"
 chetty <- read.csv(raw_url,header=TRUE)
 ```
@@ -43,14 +49,12 @@ https://apps.automeris.io/wpd/
 
 ## Converting data to ggplot favorite
 
-
-```r
+```{r convert data}
 chetty2 <- gather(chetty,Journal,adminpct,AER,JPE,QJE,ECMA,-Year)
 ```
 
 ## Plot the data
-
-```r
+```{r plot}
 g <- ggplot(chetty2,aes(Year,adminpct,color=Journal)) + 
   geom_line()  + 
   theme_minimal() +
@@ -58,18 +62,8 @@ g <- ggplot(chetty2,aes(Year,adminpct,color=Journal)) +
   scale_colour_manual(values=cbbPalette) +
   ylab("Micro-data based articles\nusing administrative data") 
 g
-```
-
-![](README_files/figure-html/plot-1.png)<!-- -->
-
-```r
 ## Export the graph
 dev.print(png,filename = "chetty_figure2.png",bg="transparent",width = 600, height=400, units = "px")
-```
-
-```
-## png 
-##   2
 ```
 
 ## Disclaimer
