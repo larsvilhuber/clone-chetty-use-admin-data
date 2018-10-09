@@ -8,6 +8,7 @@ editor_options:
   chunk_output_type: console
 ---
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1453337.svg)](https://doi.org/10.5281/zenodo.1453337)
 
 # clone-chetty-use-admin-data
 A scan of the data behind the Chetty (2012) figure
